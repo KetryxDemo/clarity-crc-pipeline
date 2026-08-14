@@ -4,7 +4,6 @@ itemType: Test Execution
 itemTitle: Clinical accuracy run against the 412-specimen reference panel
 itemExecutes: TC-AV-01
 Test result: PASS
-Test environments: ClarityCRC reference laboratory; pipeline v1.0.0; reagent lot CL-2503
 ---
 
 ## Item fields
