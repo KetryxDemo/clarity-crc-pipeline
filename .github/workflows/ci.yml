@@ -22,6 +22,8 @@ jobs:
     # the secrets context is not available in a step-level `if`.
     env:
       KETRYX_API_KEY: ${{ secrets.KETRYX_API_KEY }}
+      # Results must be pinned to a version; unpinned results do not appear.
+      DEFAULT_KETRYX_VERSION: KXVSN01M00YD6Q3EMKSM0QTGWMMPB4X
     steps:
       - uses: actions/checkout@v4
 
@@ -62,7 +64,7 @@ jobs:
           ketryx-url: https://demo.ketryx.com
           project: KXPRJ01M00WM7KTERDRXM4J4RZTEV2G
           api-key: ${{ secrets.KETRYX_API_KEY }}
-          version: ${{ inputs.version }}
+          version: ${{ inputs.version || env.DEFAULT_KETRYX_VERSION }}
           commit-sha: ${{ github.sha }}
           test-cucumber-path: reports/cucumber.json
           # Distinct per suite - a shared build-name makes builds overwrite
