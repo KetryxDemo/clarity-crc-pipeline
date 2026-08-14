@@ -14,10 +14,6 @@ Residual likelihood of occurrence (P1): Low
 Residual likelihood of harm (P2): High
 ---
 
-## Item fields
-
-### Description
-
 A specimen from a patient with colorectal cancer produces a composite classifier score below
 the positivity threshold and is reported NEGATIVE. The result is clinically plausible, the
 pipeline reports no error, and nothing in the record signals that anything went wrong.
@@ -27,6 +23,8 @@ the software emitting a wrong number - it is caused by a correct-looking result 
 on as reassurance. A false negative in screening is silent by construction: there is no
 subsequent step in the workflow that would catch it, because a negative screen ends the
 workflow.
+
+## Item fields
 
 ### Harm
 
@@ -126,7 +124,7 @@ missed cancer once it occurs. Likelihood of occurrence is reduced from Medium to
 residual false negative rate is inherent to any screening assay operating at a finite
 threshold, and is accepted on the benefit-risk basis below rather than eliminated.
 
-### Risk benefit analysis
+### Benefit-risk analysis
 
 **Clinical benefit.** ClarityCRC addresses the dominant failure of colorectal cancer
 screening, which is not test accuracy but non-participation. Roughly one in three eligible

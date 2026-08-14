@@ -4,13 +4,7 @@ itemType: Software Item Spec
 itemTitle: Instrument output ingestion and normalisation
 itemFulfills: RQ-CRC-01
 Software item type: Interface
-Safety risk class: CLASS_B
-Context: CLINICAL
 ---
-
-## Item fields
-
-### Description
 
 Reads the run manifest emitted by the sequencing instrument and the faecal haemoglobin
 result file emitted by the immunochemical analyser, and normalises both into the internal
@@ -39,6 +33,8 @@ flowchart TD
     AUD --> REL[Released result]
 ```
 
+## Item fields
+
 ### Inputs
 
 Sequencer run manifest: accession identifier, per-marker methylated and total copy counts,
@@ -54,11 +50,3 @@ the control status, the DNA input quantity, and the haemoglobin concentration.
 
 Ingestion performs no interpretation. A malformed or unreadable input is surfaced as a
 structural error rather than being coerced into a specimen record.
-
-### Rationale
-
-Confining instrument reads to a single module means a change of sequencing platform or
-haemoglobin analyser is a change to one design output rather than to the whole pipeline.
-It also gives the identity chain (SPEC-PIPE-IDENTITY) a single, well-defined place to read
-both accession identifiers from, which is what makes deterministic mismatch detection
-possible at all.
