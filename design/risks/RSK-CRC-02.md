@@ -12,6 +12,9 @@ Initial likelihood of harm (P2): High
 Residual severity: High
 Residual likelihood of occurrence (P1): Low
 Residual likelihood of harm (P2): High
+CLIA validity characteristic: Specimen identity
+Detection level: Per specimen
+Lot acceptance dependency: No
 ---
 
 ## Item fields
@@ -145,3 +148,8 @@ with the wrong accession at collection or accessioning, both streams will carry 
 wrong identifier, agree with each other, and pass verification. That failure mode is a
 specimen-handling control in the laboratory, outside this software, and is not claimed as
 covered here.
+
+### Post-market signal
+
+Discordant repeat results on the same patient; accession mismatch rejections trending
+upward; clinician-reported results inconsistent with clinical picture.

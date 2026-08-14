@@ -12,6 +12,9 @@ Initial likelihood of harm (P2): Medium
 Residual severity: High
 Residual likelihood of occurrence (P1): Low
 Residual likelihood of harm (P2): Medium
+CLIA validity characteristic: Analytical sensitivity
+Detection level: Per specimen
+Lot acceptance dependency: No
 ---
 
 ## Item fields
@@ -150,3 +153,8 @@ that the specific reason is recorded, and that no classifier score is computed.
 inadequate specimens is unchanged and remains high, but the likelihood of an inadequate
 specimen being *scored* is reduced to the residual case of a specimen degraded in a manner
 that satisfies every measurable adequacy criterion. Severity is unchanged.
+
+### Post-market signal
+
+INVALID rate trending away from the validated expectation in either direction; repeat
+specimen requests not returned.

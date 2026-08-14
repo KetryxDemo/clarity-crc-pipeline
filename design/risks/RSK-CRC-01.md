@@ -12,6 +12,9 @@ Initial likelihood of harm (P2): High
 Residual severity: High
 Residual likelihood of occurrence (P1): Low
 Residual likelihood of harm (P2): High
+CLIA validity characteristic: Analytical sensitivity
+Detection level: Per specimen
+Lot acceptance dependency: No
 ---
 
 ## Item fields
@@ -154,3 +157,8 @@ a lower confidence bound that must exceed the performance claimed in the result 
 missed cancer once it occurs. Likelihood of occurrence is reduced from Medium to Low. A
 residual false negative rate is inherent to any screening assay operating at a finite
 threshold, and is accepted on the benefit-risk basis below rather than eliminated.
+
+### Post-market signal
+
+Interval cancers reported after a negative screen; positivity rate trending below the
+validated expectation.

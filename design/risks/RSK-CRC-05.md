@@ -12,6 +12,9 @@ Initial likelihood of harm (P2): Medium
 Residual severity: Medium
 Residual likelihood of occurrence (P1): Medium
 Residual likelihood of harm (P2): Low
+CLIA validity characteristic: Analytical specificity
+Detection level: Per specimen
+Lot acceptance dependency: No
 ---
 
 ## Item fields
@@ -159,3 +162,8 @@ correct framing of a screening positive substantially reduces the psychological 
 supports appropriate clinical handling. Likelihood of occurrence falls only from High to
 Medium, because the dominant driver is the threshold itself, which is intentionally set to
 favour sensitivity and is not moved by these controls. Severity is unchanged at Medium.
+
+### Post-market signal
+
+Colonoscopy outcomes for screen-positive patients trending toward no-neoplasia beyond the
+validated specificity; declining participation in subsequent screening rounds.

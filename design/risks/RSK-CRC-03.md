@@ -11,6 +11,9 @@ Initial likelihood of harm (P2): High
 Residual severity: High
 Residual likelihood of occurrence (P1): Medium
 Residual likelihood of harm (P2): High
+CLIA validity characteristic: Analytical sensitivity
+Detection level: Per reagent lot
+Lot acceptance dependency: Yes
 ---
 
 ## Item fields
@@ -165,3 +168,9 @@ been seen and not acted on.
 **Residual risk: unchanged from initial.** With no control defined, residual severity,
 likelihood of occurrence, and likelihood of harm are all identical to the initial
 assessment. This risk is **not currently reduced**.
+
+### Post-market signal
+
+Positivity rate falling after a lot changeover; external proficiency testing challenge
+failures; interval cancers clustering within a single lot's processing window. All are
+lagging indicators measured in months, which is why lot acceptance is the needed control.
