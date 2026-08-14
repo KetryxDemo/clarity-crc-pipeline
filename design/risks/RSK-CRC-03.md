@@ -13,6 +13,10 @@ Residual likelihood of occurrence (P1): Medium
 Residual likelihood of harm (P2): High
 ---
 
+## Item fields
+
+### Description
+
 A new reagent lot shifts the measured methylation ratios relative to the lot used to
 establish the positivity threshold. The threshold in force is no longer the correct decision
 boundary for the assay as it now performs. Sensitivity falls, and specimens that would have
@@ -28,7 +32,27 @@ This is a systematic failure affecting every specimen processed on the affected 
 per-specimen failure. It converts RSK-CRC-01 from an occasional event into a population-level
 one, and it does so without producing a single detectable symptom in the result stream.
 
-## Item fields
+**Benefit-risk analysis**
+
+Unlike RSK-CRC-01 and RSK-CRC-05, this risk carries **no offsetting clinical benefit** and
+cannot be accepted on a benefit-risk basis.
+
+A residual false negative rate at a validated threshold is an inherent and accepted property
+of screening at a finite decision boundary, and it is justified by the benefit of screening a
+population that would otherwise not be screened at all. That argument does not extend here.
+This risk is not the assay performing as validated within its known limits; it is the assay
+performing **differently from how it was validated**, while continuing to claim the validated
+performance. There is no clinical benefit attached to that, and no patient consents to it.
+
+It is also not a risk the patient or clinician can compensate for. The limitations statement
+on a negative report tells a clinician that a negative result does not rule out cancer, which
+is true and useful. It does not tell them that this particular negative result was produced
+at a sensitivity below the one printed on the report.
+
+**Disposition.** This risk requires a defined risk control measure before the residual risk
+can be assessed as acceptable. Until a lot-acceptance procedure exists, is traced to a
+requirement, and is verified, the risk register carries an unmitigated high-severity risk and
+the acceptability determination for the design is incomplete.
 
 ### Harm
 
@@ -141,25 +165,3 @@ been seen and not acted on.
 **Residual risk: unchanged from initial.** With no control defined, residual severity,
 likelihood of occurrence, and likelihood of harm are all identical to the initial
 assessment. This risk is **not currently reduced**.
-
-### Risk benefit analysis
-
-Unlike RSK-CRC-01 and RSK-CRC-05, this risk carries **no offsetting clinical benefit** and
-cannot be accepted on a benefit-risk basis.
-
-A residual false negative rate at a validated threshold is an inherent and accepted property
-of screening at a finite decision boundary, and it is justified by the benefit of screening a
-population that would otherwise not be screened at all. That argument does not extend here.
-This risk is not the assay performing as validated within its known limits; it is the assay
-performing **differently from how it was validated**, while continuing to claim the validated
-performance. There is no clinical benefit attached to that, and no patient consents to it.
-
-It is also not a risk the patient or clinician can compensate for. The limitations statement
-on a negative report tells a clinician that a negative result does not rule out cancer, which
-is true and useful. It does not tell them that this particular negative result was produced
-at a sensitivity below the one printed on the report.
-
-**Disposition.** This risk requires a defined risk control measure before the residual risk
-can be assessed as acceptable. Until a lot-acceptance procedure exists, is traced to a
-requirement, and is verified, the risk register carries an unmitigated high-severity risk and
-the acceptability determination for the design is incomplete.
