@@ -4,8 +4,6 @@ itemType: Requirement
 itemTitle: Generate a result report containing result, method, and limitations
 itemHasParent: RQ-CRC-00
 Requirement type: Functional
-Context: CLINICAL
-Relevant standards: 42 CFR 493.1291; CLIA result reporting
 ---
 
 ## Item fields

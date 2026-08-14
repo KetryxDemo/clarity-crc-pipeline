@@ -4,8 +4,6 @@ itemType: Software Item Spec
 itemTitle: Result report generation
 itemFulfills: RQ-CRC-06
 Software item type: Function
-Safety risk class: CLASS_B
-Context: CLINICAL
 ---
 
 ## Item fields

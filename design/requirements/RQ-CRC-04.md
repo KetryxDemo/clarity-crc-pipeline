@@ -4,8 +4,6 @@ itemType: Requirement
 itemTitle: Detect and reject specimens failing sample-adequacy QC before scoring
 itemHasParent: RQ-CRC-00
 Requirement type: Functional
-Context: SAFETY
-Relevant standards: 42 CFR 493.1253; ISO 14971
 ---
 
 ## Item fields

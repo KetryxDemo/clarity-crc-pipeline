@@ -4,8 +4,6 @@ itemType: Requirement
 itemTitle: Record an attributable, time-stamped audit trail for each result release
 itemHasParent: RQ-CRC-00
 Requirement type: Functional
-Context: REGULATORY
-Relevant standards: 21 CFR Part 11; 42 CFR 493.1291
 ---
 
 ## Item fields

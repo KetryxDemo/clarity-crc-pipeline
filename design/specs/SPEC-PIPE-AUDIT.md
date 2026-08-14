@@ -5,8 +5,6 @@ itemTitle: Part 11 audit trail for result release
 itemFulfills: RQ-CRC-08
 
 Software item type: Function
-Safety risk class: CLASS_B
-Context: REGULATORY
 ---
 
 ## Item fields

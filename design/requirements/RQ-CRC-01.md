@@ -4,8 +4,6 @@ itemType: Requirement
 itemTitle: Quantify each methylated DNA marker in the panel
 itemHasParent: RQ-CRC-00
 Requirement type: Functional
-Context: CLINICAL
-Relevant standards: CLSI MM01; 42 CFR 493.1253
 ---
 
 ## Item fields

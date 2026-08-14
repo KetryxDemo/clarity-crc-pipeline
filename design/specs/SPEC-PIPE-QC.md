@@ -5,8 +5,6 @@ itemTitle: Sample-adequacy QC and invalid-run handling
 itemFulfills: RQ-CRC-04
 itemIntroducesRisk: RSK-CRC-04
 Software item type: Function
-Safety risk class: CLASS_C
-Context: SAFETY
 ---
 
 ## Item fields

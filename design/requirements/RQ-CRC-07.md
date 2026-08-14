@@ -4,8 +4,6 @@ itemType: Requirement
 itemTitle: Enforce the validated reportable range and flag out-of-range inputs
 itemHasParent: RQ-CRC-00
 Requirement type: Functional
-Context: SAFETY
-Relevant standards: 42 CFR 493.1253(b)(2); CLSI EP06
 ---
 
 ## Item fields

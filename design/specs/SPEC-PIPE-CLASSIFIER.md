@@ -5,8 +5,6 @@ itemTitle: Composite scoring and threshold application
 itemFulfills: RQ-CRC-03, RQ-CRC-07
 itemIntroducesRisk: RSK-CRC-01, RSK-CRC-03, RSK-CRC-05
 Software item type: Function
-Safety risk class: CLASS_C
-Context: CLINICAL
 ---
 
 ## Item fields
