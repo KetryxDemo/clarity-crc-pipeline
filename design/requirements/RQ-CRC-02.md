@@ -4,7 +4,7 @@ itemType: Requirement
 itemTitle: Incorporate the faecal haemoglobin value into the composite score
 itemHasParent: RQ-CRC-00
 Requirement type: Functional
-Context: CLINICAL
+Context: Clinical
 Relevant standards: 42 CFR 493.1253
 ---
 

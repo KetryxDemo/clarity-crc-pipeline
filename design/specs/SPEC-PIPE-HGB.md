@@ -5,8 +5,8 @@ itemTitle: Faecal haemoglobin value integration
 itemFulfills: RQ-CRC-02
 
 Software item type: Function
-Safety risk class: CLASS_C
-Context: CLINICAL
+Safety risk class: Class C
+Context: Clinical
 ---
 
 ## Item fields

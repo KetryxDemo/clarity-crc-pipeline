@@ -4,8 +4,8 @@ itemType: Software Item Spec
 itemTitle: Instrument output ingestion and normalisation
 itemFulfills: RQ-CRC-01
 Software item type: Interface
-Safety risk class: CLASS_B
-Context: CLINICAL
+Safety risk class: Class B
+Context: Clinical
 ---
 
 ## Item fields

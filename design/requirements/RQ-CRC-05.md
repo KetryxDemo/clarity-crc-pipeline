@@ -4,7 +4,7 @@ itemType: Requirement
 itemTitle: Bind every result to its specimen accession identity end to end
 itemHasParent: RQ-CRC-00
 Requirement type: Functional
-Context: SAFETY
+Context: Safety
 Relevant standards: ISO 15189; CAP GEN.40490
 ---
 

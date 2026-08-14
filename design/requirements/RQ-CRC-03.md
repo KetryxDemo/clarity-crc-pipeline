@@ -4,7 +4,7 @@ itemType: Requirement
 itemTitle: Compute the classifier score and apply the validated positivity threshold
 itemHasParent: RQ-CRC-00
 Requirement type: Functional
-Context: CLINICAL
+Context: Clinical
 Relevant standards: 42 CFR 493.1253; CLSI EP12
 ---
 

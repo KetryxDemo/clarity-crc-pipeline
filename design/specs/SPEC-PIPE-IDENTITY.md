@@ -5,8 +5,8 @@ itemTitle: Accession identity chain and mismatch rejection
 itemFulfills: RQ-CRC-05
 itemIntroducesRisk: RSK-CRC-02
 Software item type: Function
-Safety risk class: CLASS_C
-Context: SAFETY
+Safety risk class: Class C
+Context: Safety
 ---
 
 ## Item fields

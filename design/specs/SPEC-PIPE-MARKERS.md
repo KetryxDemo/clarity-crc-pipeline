@@ -5,8 +5,8 @@ itemTitle: Marker quantification and panel assembly
 itemFulfills: RQ-CRC-01
 
 Software item type: Function
-Safety risk class: CLASS_C
-Context: CLINICAL
+Safety risk class: Class C
+Context: Clinical
 ---
 
 ## Item fields

@@ -3,7 +3,7 @@ itemId: TE-AV-03
 itemType: Test Execution
 itemTitle: Limit of detection dilution series, twenty replicates per level
 itemExecutes: TC-AV-03
-Test result: PASS
+Test result: Pass
 Test environments: ClarityCRC reference laboratory; pipeline v1.0.0; reagent lot CL-2503
 ---
 

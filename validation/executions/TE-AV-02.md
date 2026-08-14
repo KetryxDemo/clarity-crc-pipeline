@@ -3,7 +3,7 @@ itemId: TE-AV-02
 itemType: Test Execution
 itemTitle: Precision run across reagent lots CL-2411, CL-2503, CL-2508
 itemExecutes: TC-AV-02
-Test result: PASS
+Test result: Pass
 Test environments: ClarityCRC reference laboratory; pipeline v1.0.0; reagent lots CL-2411, CL-2503, CL-2508
 ---
 
