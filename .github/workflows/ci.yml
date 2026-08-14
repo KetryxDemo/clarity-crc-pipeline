@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  # Explicit version input - the reliable path for reporting against a
+  # specific Ketryx version rather than Current Draft.
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Ketryx version to report results against
+        required: true
+  push:
+    branches: [main]
+    # A tag push is NOT matched by `branches`. Without this, cutting the
+    # release tag runs nothing and the Ketryx version sits in Draft with
+    # zero executions.
+    tags: ['v*']
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm ci
+
+      - name: Run acceptance suite
+        run: npm run test:report
+
+      - name: Report test results to Ketryx
+        uses: Ketryx/ketryx-github-action@v1
+        with:
+          project: ${{ vars.KETRYX_PROJECT }}
+          api-key: ${{ secrets.KETRYX_API_KEY }}
+          # Tag pushes resolve via commit-sha; workflow_dispatch pins explicitly.
+          version: ${{ inputs.version }}
+          commit-sha: ${{ github.sha }}
+          test-cucumber-path: reports/cucumber.json
+          # Distinct per suite - a shared build-name makes builds overwrite
+          # each other and executions come back blank.
+          build-name: clarity-crc-acceptance
+
+      - name: Upload Cucumber report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cucumber-report
+          path: reports/cucumber.json

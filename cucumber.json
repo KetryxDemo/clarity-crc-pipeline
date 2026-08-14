@@ -1,0 +1,6 @@
+{
+  "default": {
+    "paths": ["validation/features/**/*.feature"],
+    "import": ["src/steps/**/*.js"]
+  }
+}
