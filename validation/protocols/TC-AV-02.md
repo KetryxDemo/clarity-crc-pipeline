@@ -5,13 +5,15 @@ itemTitle: Precision and repeatability across three reagent lots
 itemTests: RQ-CRC-01
 ---
 
+## Item fields
+
+### Description
+
 Establishes within-run, between-run, and between-lot precision of marker quantification.
 
 Between-lot precision is the arm that matters most: it is the only routine measurement that
 would surface the reagent-lot drift described in RSK-CRC-03, and it is currently the closest
 thing to a detection mechanism for that risk.
-
-## Item fields
 
 ### Steps
 
@@ -28,3 +30,4 @@ thing to a detection mechanism for that risk.
 Within-run CV at or below 5 percent. Between-run CV at or below 10 percent. Between-lot CV
 at or below 15 percent. No lot shows a systematic shift in the marker ratio distribution
 relative to the validating lot.
+

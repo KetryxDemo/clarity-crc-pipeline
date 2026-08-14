@@ -5,11 +5,13 @@ itemTitle: Analytical sensitivity and limit of detection
 itemTests: RQ-CRC-04
 ---
 
+## Item fields
+
+### Description
+
 Establishes the limit of detection for the marker panel and confirms that the minimum DNA
 input enforced by sample-adequacy QC sits at or above the input at which the assay performs
 reliably.
-
-## Item fields
 
 ### Steps
 
@@ -24,3 +26,4 @@ reliably.
 
 Limit of detection established with at least 95 percent detection. The QC minimum DNA input
 threshold is at or above the established limit of detection.
+

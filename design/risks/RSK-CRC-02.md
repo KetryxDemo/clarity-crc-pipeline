@@ -14,6 +14,10 @@ Residual likelihood of occurrence (P1): Low
 Residual likelihood of harm (P2): High
 ---
 
+## Item fields
+
+### Description
+
 Marker data from one specimen is combined with the haemoglobin measurement from another, or a
 result is released bound to the wrong accession identifier. One patient receives a result
 derived wholly or partly from another patient's sample.
@@ -26,7 +30,23 @@ because it describes the wrong person.
 It is also uniquely undetectable by the recipient. A clinician has no way to look at a
 NEGATIVE ClarityCRC result and tell that it belongs to someone else.
 
-## Item fields
+**Benefit-risk analysis**
+
+This risk carries **no offsetting clinical benefit**. Unlike the false negative and false
+positive risks, which arise from operating a screening assay at a finite threshold and are
+justified by the benefit of screening an otherwise unscreened population, a specimen mix-up
+delivers no diagnostic value to anyone. It is pure harm.
+
+It is therefore not a risk to be accepted on a benefit-risk basis, but one to be driven as
+close to elimination as the design allows. The controls above are structured accordingly:
+identity is verified before any other processing, and the failure mode is fail-closed with no
+result emitted rather than a best-effort result attached to a guessed accession.
+
+**Disposition.** Residual risk is acceptable for the software boundary, on the basis that
+divergence between instrument streams is detected deterministically and fails closed. This
+determination explicitly does not extend to mislabelling at collection or accessioning, which
+must be controlled by laboratory specimen-handling procedures and is out of scope for this
+project.
 
 ### Harm
 
@@ -125,21 +145,3 @@ with the wrong accession at collection or accessioning, both streams will carry 
 wrong identifier, agree with each other, and pass verification. That failure mode is a
 specimen-handling control in the laboratory, outside this software, and is not claimed as
 covered here.
-
-### Benefit-risk analysis
-
-This risk carries **no offsetting clinical benefit**. Unlike the false negative and false
-positive risks, which arise from operating a screening assay at a finite threshold and are
-justified by the benefit of screening an otherwise unscreened population, a specimen mix-up
-delivers no diagnostic value to anyone. It is pure harm.
-
-It is therefore not a risk to be accepted on a benefit-risk basis, but one to be driven as
-close to elimination as the design allows. The controls above are structured accordingly:
-identity is verified before any other processing, and the failure mode is fail-closed with no
-result emitted rather than a best-effort result attached to a guessed accession.
-
-**Disposition.** Residual risk is acceptable for the software boundary, on the basis that
-divergence between instrument streams is detected deterministically and fails closed. This
-determination explicitly does not extend to mislabelling at collection or accessioning, which
-must be controlled by laboratory specimen-handling procedures and is out of scope for this
-project.

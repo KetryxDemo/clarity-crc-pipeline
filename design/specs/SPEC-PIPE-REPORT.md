@@ -6,6 +6,10 @@ itemFulfills: RQ-CRC-06
 Software item type: Function
 ---
 
+## Item fields
+
+### Description
+
 Renders the result report for a scored or rejected specimen.
 
 The report carries the qualitative result, the accession identifier, the assay method and
@@ -18,8 +22,7 @@ mitigation for a false negative being acted on as an all-clear. A POSITIVE repor
 that diagnostic colonoscopy is indicated. An INVALID report states the reason and that a
 repeat specimen is required.
 
-## Item fields
-
 ### Outputs
 
 The rendered result report for release to the ordering clinician.
+

@@ -7,6 +7,10 @@ itemIntroducesRisk: RSK-CRC-02
 Software item type: Function
 ---
 
+## Item fields
+
+### Description
+
 Verifies that the accession identifier carried by the marker data matches the accession
 identifier carried by the haemoglobin measurement, and binds the verified identifier to the
 specimen record for the remainder of the run.
@@ -19,9 +23,8 @@ that point.
 Identity verification runs before quantification, so a mismatched specimen consumes no
 downstream processing and cannot reach the classifier by any path.
 
-## Item fields
-
 ### Outputs
 
 The verified accession identifier bound to the specimen record, or a rejection with both
 observed identifiers recorded for laboratory follow-up.
+

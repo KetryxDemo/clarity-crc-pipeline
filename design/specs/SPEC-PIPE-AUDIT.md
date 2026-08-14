@@ -7,6 +7,10 @@ itemFulfills: RQ-CRC-08
 Software item type: Function
 ---
 
+## Item fields
+
+### Description
+
 Writes the computer-generated, time-stamped audit entry that accompanies each released
 result, and gates release on that write succeeding.
 
@@ -19,8 +23,7 @@ The write is a precondition of release, not a consequence of it. Where the audit
 cannot be written, the result is withheld - a released result with no audit record would be
 an unattributable electronic record.
 
-## Item fields
-
 ### Outputs
 
 A persisted audit entry, and a release decision that is contingent on it.
+

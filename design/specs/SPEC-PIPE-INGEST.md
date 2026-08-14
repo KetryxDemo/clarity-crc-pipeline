@@ -6,6 +6,10 @@ itemFulfills: RQ-CRC-01
 Software item type: Interface
 ---
 
+## Item fields
+
+### Description
+
 Reads the run manifest emitted by the sequencing instrument and the faecal haemoglobin
 result file emitted by the immunochemical analyser, and normalises both into the internal
 specimen record consumed by the rest of the pipeline.
@@ -33,8 +37,6 @@ flowchart TD
     AUD --> REL[Released result]
 ```
 
-## Item fields
-
 ### Inputs
 
 Sequencer run manifest: accession identifier, per-marker methylated and total copy counts,
@@ -50,3 +52,4 @@ the control status, the DNA input quantity, and the haemoglobin concentration.
 
 Ingestion performs no interpretation. A malformed or unreadable input is surfaced as a
 structural error rather than being coerced into a specimen record.
+

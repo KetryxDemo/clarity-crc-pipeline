@@ -7,6 +7,10 @@ itemIntroducesRisk: RSK-CRC-01, RSK-CRC-03, RSK-CRC-05
 Software item type: Function
 ---
 
+## Item fields
+
+### Description
+
 Computes the composite classifier score from the quantified marker panel and the validated
 haemoglobin value, applies the configured positivity threshold, and emits the qualitative
 result.
@@ -25,10 +29,9 @@ This module also enforces the reportable range for each scoring input. An input 
 validated range is not scored as though it were in range; the specimen is routed for
 INVALID handling with the offending input and direction recorded.
 
-## Item fields
-
 ### Outputs
 
 A qualitative result of POSITIVE or NEGATIVE, the computed score, the threshold applied,
 and the coefficient set version. For a reportable-range violation, an INVALID outcome with
 the offending input identified.
+

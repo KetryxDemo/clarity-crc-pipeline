@@ -14,6 +14,10 @@ Residual likelihood of occurrence (P1): Low
 Residual likelihood of harm (P2): High
 ---
 
+## Item fields
+
+### Description
+
 A specimen from a patient with colorectal cancer produces a composite classifier score below
 the positivity threshold and is reported NEGATIVE. The result is clinically plausible, the
 pipeline reports no error, and nothing in the record signals that anything went wrong.
@@ -24,7 +28,34 @@ on as reassurance. A false negative in screening is silent by construction: ther
 subsequent step in the workflow that would catch it, because a negative screen ends the
 workflow.
 
-## Item fields
+**Benefit-risk analysis**
+
+**Clinical benefit.** ClarityCRC addresses the dominant failure of colorectal cancer
+screening, which is not test accuracy but non-participation. Roughly one in three eligible
+adults is not up to date with screening, overwhelmingly because colonoscopy is invasive,
+requires bowel preparation, requires time off work, and requires sedation and an escort. A
+non-invasive stool test collected at home converts a portion of that never-screened
+population into screened patients.
+
+The relevant comparison is therefore not against colonoscopy. It is against no screening at
+all, which is the actual alternative for this population, and whose sensitivity is zero.
+
+**Weighing.** A false negative from ClarityCRC leaves a patient no worse off diagnostically
+than they were unscreened, with the important exception of false reassurance, which RC-3
+exists to constrain. Against that, the assay detects a substantial share of screen-relevant
+disease in a population that would otherwise have been detected only at symptomatic
+presentation.
+
+The positivity threshold is deliberately set to favour sensitivity over specificity, and
+threshold comparison is inclusive at the boundary. That choice increases RSK-CRC-05, false
+positives leading to unnecessary colonoscopy, and it is made knowingly: an unnecessary
+colonoscopy is a procedural risk in an otherwise healthy patient, while a missed cancer is
+a mortality risk. The two are not symmetric and the threshold does not treat them as such.
+
+**Conclusion.** Residual risk is acceptable in the context of the intended use stated in
+RQ-CRC-00, provided the limitations in RC-3 are carried on every negative report and the
+sensitivity claim in RC-4 continues to hold under routine lot-to-lot variation. That proviso
+is not currently fully discharged - see RSK-CRC-03.
 
 ### Harm
 
@@ -123,32 +154,3 @@ a lower confidence bound that must exceed the performance claimed in the result 
 missed cancer once it occurs. Likelihood of occurrence is reduced from Medium to Low. A
 residual false negative rate is inherent to any screening assay operating at a finite
 threshold, and is accepted on the benefit-risk basis below rather than eliminated.
-
-### Benefit-risk analysis
-
-**Clinical benefit.** ClarityCRC addresses the dominant failure of colorectal cancer
-screening, which is not test accuracy but non-participation. Roughly one in three eligible
-adults is not up to date with screening, overwhelmingly because colonoscopy is invasive,
-requires bowel preparation, requires time off work, and requires sedation and an escort. A
-non-invasive stool test collected at home converts a portion of that never-screened
-population into screened patients.
-
-The relevant comparison is therefore not against colonoscopy. It is against no screening at
-all, which is the actual alternative for this population, and whose sensitivity is zero.
-
-**Weighing.** A false negative from ClarityCRC leaves a patient no worse off diagnostically
-than they were unscreened, with the important exception of false reassurance, which RC-3
-exists to constrain. Against that, the assay detects a substantial share of screen-relevant
-disease in a population that would otherwise have been detected only at symptomatic
-presentation.
-
-The positivity threshold is deliberately set to favour sensitivity over specificity, and
-threshold comparison is inclusive at the boundary. That choice increases RSK-CRC-05, false
-positives leading to unnecessary colonoscopy, and it is made knowingly: an unnecessary
-colonoscopy is a procedural risk in an otherwise healthy patient, while a missed cancer is
-a mortality risk. The two are not symmetric and the threshold does not treat them as such.
-
-**Conclusion.** Residual risk is acceptable in the context of the intended use stated in
-RQ-CRC-00, provided the limitations in RC-3 are carried on every negative report and the
-sensitivity claim in RC-4 continues to hold under routine lot-to-lot variation. That proviso
-is not currently fully discharged - see RSK-CRC-03.

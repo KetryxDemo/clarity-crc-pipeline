@@ -5,6 +5,10 @@ itemTitle: Screen average-risk adults for colorectal cancer from a stool specime
 Requirement type: Use case
 ---
 
+## Item fields
+
+### Description
+
 ClarityCRC is a qualitative laboratory-developed test that screens average-risk adults
 aged 45 and older for colorectal cancer using a self-collected stool specimen.
 
@@ -17,8 +21,6 @@ to the ordering clinician.
 The test is performed exclusively within the ClarityCRC reference laboratory, which is
 certified under CLIA to perform high-complexity testing. It is not distributed as a kit and
 is not performed at any other site.
-
-## Item fields
 
 ### Intended use
 
@@ -41,3 +43,4 @@ Accordingly, the controlling obligation is establishment of analytical validity 
 42 CFR 493.1253 before any patient result is released: accuracy, precision, analytical
 sensitivity, analytical specificity, reportable range, and reference intervals. Records
 supporting result release are maintained as electronic records under 21 CFR Part 11.
+
