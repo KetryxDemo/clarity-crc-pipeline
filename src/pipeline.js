@@ -24,6 +24,34 @@ export const CONFIG = {
 
 export const PANEL_MARKERS = Object.keys(CONFIG.markerWeights);
 
+// --- SPEC-PIPE-INGEST --------------------------------------------------------
+
+/**
+ * Normalises the two instrument streams into one specimen record. The only
+ * module that reads instrument output directly, so a platform change is
+ * contained here. Performs no interpretation: a malformed input surfaces as a
+ * structural error rather than being coerced into a specimen record.
+ */
+export function ingest(markerData, haemoglobinData) {
+  if (!markerData?.markers) {
+    return { record: null, error: 'sequencer manifest has no marker block' };
+  }
+  if (!haemoglobinData) {
+    return { record: null, error: 'haemoglobin analyser output missing' };
+  }
+  return {
+    error: null,
+    record: {
+      markerAccession: markerData.accession,
+      haemoglobinAccession: haemoglobinData.accession,
+      markers: markerData.markers,
+      totalDnaInputNg: markerData.totalDnaInputNg,
+      conversionControl: markerData.conversionControl,
+      haemoglobinNgPerMl: haemoglobinData.haemoglobinNgPerMl,
+    },
+  };
+}
+
 // --- SPEC-PIPE-IDENTITY ------------------------------------------------------
 
 /**

@@ -5,14 +5,16 @@ itemTitle: Clinical accuracy against a colonoscopy-confirmed reference panel
 itemTests: RQ-CRC-03
 ---
 
+## Item fields
+
+### Description
+
 Establishes clinical sensitivity and specificity of ClarityCRC against a reference panel of
 specimens whose disease status is known from colonoscopy, and confirms that the positivity
 threshold in force reproduces the sensitivity and specificity claimed at validation.
 
 This is bench work. It cannot be produced by the CI pipeline, and its execution record is
 entered manually.
-
-## Item fields
 
 ### Steps
 
