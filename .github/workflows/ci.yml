@@ -18,6 +18,10 @@ on:
 jobs:
   acceptance:
     runs-on: ubuntu-latest
+    # Surfaced as env so the reporting step can test for its presence -
+    # the secrets context is not available in a step-level `if`.
+    env:
+      KETRYX_API_KEY: ${{ secrets.KETRYX_API_KEY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -30,12 +34,34 @@ jobs:
       - name: Run acceptance suite
         run: npm run test:report
 
+      # The @tests tags live in the .feature sources, where the Ketryx repo scan
+      # turns them into Test Case -> item trace links. Stripping them from the
+      # runtime report makes executions attach to those Test Cases by scenario
+      # identity, without creating duplicate bare AT links on the targets.
+      - name: Strip trace tags from report
+        run: |
+          node -e "
+            const fs = require('fs');
+            const p = 'reports/cucumber.json';
+            const r = JSON.parse(fs.readFileSync(p, 'utf8'));
+            for (const feat of r) {
+              for (const el of feat.elements || []) {
+                el.tags = (el.tags || []).filter(t => !t.name.startsWith('@tests:'));
+              }
+            }
+            fs.writeFileSync(p, JSON.stringify(r));
+          "
+
+      # Skipped until KETRYX_API_KEY exists, so CI stays green in the meantime.
       - name: Report test results to Ketryx
+        if: ${{ always() && env.KETRYX_API_KEY != '' }}
         uses: Ketryx/ketryx-github-action@v1
         with:
-          project: ${{ vars.KETRYX_PROJECT }}
+          # Pin the instance explicitly - the action defaults to app.ketryx.com
+          # (production), which is not where this demo lives.
+          ketryx-url: https://demo.ketryx.com
+          project: KXPRJ01M00WM7KTERDRXM4J4RZTEV2G
           api-key: ${{ secrets.KETRYX_API_KEY }}
-          # Tag pushes resolve via commit-sha; workflow_dispatch pins explicitly.
           version: ${{ inputs.version }}
           commit-sha: ${{ github.sha }}
           test-cucumber-path: reports/cucumber.json
